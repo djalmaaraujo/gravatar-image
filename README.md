@@ -6,8 +6,6 @@ Web Component wrapper for Gravatar using Polymer
 
 ## Demo
 
-![Gravatar]()
-
 > [Check it live](http://customelements.github.io/gravatar-element).
 
 ## Usage
