@@ -1,14 +1,14 @@
-# &lt;my-element&gt;
+# &lt;gravatar&gt;
 
-TODO: Write a project description
+Web Component wrapper for Gravatar using Polymer
 
-> Maintained by [Your Name](https://github.com/yourname).
+> Maintained by [Djalma Araújo](https://github.com/djalmaaraujo).
 
 ## Demo
 
-![My Element]()
+![Gravatar]()
 
-> [Check it live](http://customelements.github.io/boilerplate-element).
+> [Check it live](http://customelements.github.io/gravatar-element).
 
 ## Usage
 
@@ -21,22 +21,22 @@ TODO: Write a project description
 2. Import Custom Element:
 
 	```html
-	<link rel="import" href="src/my-element.html">
+	<link rel="import" href="src/gravatar.html">
 	```
 
 3. Start using it!
 
 	```html
-	<my-element></my-element>
+	<gravatar username="your-gravatar-email-here"></gravatar>
 	```
 
 ## Options
 
-Attribute  | Options                   | Default             | Description
----        | ---                       | ---                 | ---
-`foo`      | *string*                  | `bar`               | Lorem ipsum
-`bar`      | `abc`, `def`, `ghi` 	   | `foo`               | Lorem ipsum
-`height`   | *int*                     | `100`               | Lorem ipsum
+Attribute   | Options                   | Default                 | Description
+---         | ---                       | ---                     | ---
+`username`  | *string*                  | `someemail@example.com` | Your gravatar email
+`size`      | *int* 	                  | `80`               		  | The img size
+`customurl` | *string*                  | `false`                 | If you want to link gravatar to a custom URL
 
 
 ## Contributing
@@ -49,8 +49,8 @@ Attribute  | Options                   | Default             | Description
 
 ## History
 
-* v0.0.1 August 19, 2013
-	* Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
+* v0.0.1 August 20, 2013
+	* Created gravata element with username, size and customurl options
 
 ## License
 
