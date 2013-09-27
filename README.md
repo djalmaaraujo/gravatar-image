@@ -25,7 +25,7 @@ Web Component wrapper for Gravatar using Polymer
 3. Start using it!
 
 	```html
-	<gravatar-image username="your-gravatar-email-here"></gravatar-image>
+	<gravatar-image username="your-gravatar-email-here" or use hash="your-md5-email-here"></gravatar-image>
 	```
 
 ## Options
