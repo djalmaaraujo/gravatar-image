@@ -1,4 +1,4 @@
-<polymer-element name="gravatar" attributes="username size customurl">
+<polymer-element name="gravatar-image" attributes="username size customurl">
 
 <template>
 	<a id="username">
@@ -27,7 +27,7 @@
 	  	}
 	};
 
-	Polymer('gravatar', {
+	Polymer('gravatar-image', {
 		created: function() {
 			this.$.username.href = Gravatar.profileURL(this);
 			this.$.username_image.src = Gravatar.imageURL(this.username, this.size);

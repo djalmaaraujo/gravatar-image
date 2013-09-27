@@ -1,4 +1,4 @@
-# &lt;gravatar&gt;
+# &lt;gravatar-image&gt;
 
 Web Component wrapper for Gravatar using Polymer
 
@@ -6,7 +6,7 @@ Web Component wrapper for Gravatar using Polymer
 
 ## Demo
 
-> [Check it live](http://djalmaaraujo.github.io/gravatar-element).
+> [Check it live](http://djalmaaraujo.github.io/gravatar-image).
 
 ## Usage
 
@@ -25,7 +25,7 @@ Web Component wrapper for Gravatar using Polymer
 3. Start using it!
 
 	```html
-	<gravatar username="your-gravatar-email-here"></gravatar>
+	<gravatar-image username="your-gravatar-email-here"></gravatar-image>
 	```
 
 ## Options
@@ -44,11 +44,6 @@ Attribute   | Options                   | Default                 | Description
 3. Commit your changes: `git commit -m 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
-
-## History
-
-* v0.0.1 August 20, 2013
-	* Created gravata element with username, size and customurl options
 
 ## License
 
