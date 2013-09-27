@@ -30,11 +30,12 @@ Web Component wrapper for Gravatar using Polymer
 
 ## Options
 
-Attribute   | Options                   | Default                 | Description
----         | ---                       | ---                     | ---
-`username`  | *string*                  | `someemail@example.com` | Your gravatar email
-`size`      | *int* 	                  | `80`               		  | The img size
-`customurl` | *string*                  | `false`                 | If you want to link gravatar to a custom URL
+Attribute   | Options                   | Default                            | Description
+---         | ---                       | ---                                | ---
+`username`  | *string*                  | `someemail@example.com`            | Your gravatar email
+`hash`      | *string*                  | `be74fd9a577ea5ef1ab2e7c71bcfa4b5` | MD5 hash of your email (prevent to expose your email)
+`size`      | *int* 	                  | `80`               		             | The img size
+`customurl` | *string*                  | `false`                            | If you want to link gravatar to a custom URL
 
 
 ## Contributing
