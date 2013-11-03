@@ -29,9 +29,18 @@
 	};
 
 	Polymer('gravatar-image', {
-		created: function() {
+		_updateGravatarElements: function() {
 			this.$.username.href = Gravatar.profileURL(this);
 			this.$.username_image.src = Gravatar.imageURL(this.username, this.size, this.hash);
+		},
+		usernameChanged: function() {
+			this._updateGravatarElements();
+		},
+		hashChanged: function() {
+			this._updateGravatarElements();
+		},
+		sizeChanged: function() {
+			this._updateGravatarElements();
 		},
 		hash: '',
 		username: 'someemail@example.com',
