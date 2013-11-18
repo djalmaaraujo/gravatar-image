@@ -28,15 +28,14 @@
 	  	}
 	};
 
-	Polymer('gravatar-image', {
-		created: function() {
-			this.$.username.href = Gravatar.profileURL(this);
-			this.$.username_image.src = Gravatar.imageURL(this.username, this.size, this.hash);
-		},
-		hash: '',
-		username: 'someemail@example.com',
-		size: 80
-	});
+  Polymer('gravatar-image', {
+    enteredView: function() {
+      this.size = this.size || 80;
+      this.hash = this.hash || "";
+      this.$.username.href = Gravatar.profileURL(this);
+      this.$.username_image.src = Gravatar.imageURL(this.username, this.size, this.hash);
+    }
+  });
   </script>
 
 </polymer-element>
