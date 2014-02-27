@@ -1,4 +1,4 @@
-<polymer-element name="gravatar-image" attributes="username size hash">
+<polymer-element name="gravatar-image" attributes="username size hash placeholder">
 
   <template>
     <style>
@@ -15,10 +15,16 @@
 
   <script>
     var Gravatar = {
-      imageURL: function (email, size, hash) {
+      imageURL: function (email, size, hash, placeholder) {
         var avatarString = (hash.length > 0) ?  hash : MD5(email);
 
-        return 'http://www.gravatar.com/avatar/' + avatarString + '.jpg?s=' + size;
+        url = 'http://www.gravatar.com/avatar/' + avatarString + '.jpg?s=' + size;
+
+        if (placeholder && placeholder.length > 0) {
+          url += '&d=' + placeholder;
+        }
+
+        return url;
       }
     };
 
@@ -27,7 +33,7 @@
         this.size = this.size || 80;
         this.hash = this.hash || "";
 
-        this.$.username_image.src = Gravatar.imageURL(this.username, this.size, this.hash);
+        this.$.username_image.src = Gravatar.imageURL(this.username, this.size, this.hash, this.placeholder);
       }
     });
   </script>
