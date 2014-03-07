@@ -1,0 +1,28 @@
+{
+  "name": "gravatar-image",
+  "version": "0.0.0",
+  "homepage": "https://github.com/djalmaaraujo/gravatar-image",
+  "authors": [
+    "Djalma Araújo <https://github.com/djalmaaraujo>"
+  ],
+  "description": "Web Component wrapper for Gravatar using Polymer",
+  "main": "src/gravatar.html",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "gravatar"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~0.2.0"
+  }
+}
